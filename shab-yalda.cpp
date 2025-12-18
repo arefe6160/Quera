@@ -21,3 +21,4 @@ if(boodje>=x) {
         cout<<"Nothing"<<endl;
     }
 }
+
