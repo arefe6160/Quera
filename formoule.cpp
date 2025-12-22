@@ -1,23 +1,18 @@
 #include <iostream>
-
 using namespace std;
-bool aval(int a){
-    if (a<2) return false;
 
-    for(int i=2;i<a;i++){
-        if (a%i==0){
-            return false;
-        }
-}return true;
+int main() {
+    long long int x;
+    long long int f = 0;
+    cin >> x;
+    long long int fard_t=(x+1)/2;
+    long long int fard_sum=fard_t*fard_t;
 
+    long long int zoj_t=x/2;
+    long long int zoj_sum=zoj_t*(zoj_t+1);
+
+    f=zoj_sum-fard_sum;
+    cout << f;
+
+    return 0;
 }
-int main()
-{int a,b;
-    cin>>a>>b;
-    for(int i=a;i<=b;i++){
-        if (aval(i)==true){
-            cout<<i<<" ";
-        }
-    }cout<<endl;
-}
-
